@@ -1,1 +1,2 @@
-Zmiana na test
+
+Zmiana na test_2
