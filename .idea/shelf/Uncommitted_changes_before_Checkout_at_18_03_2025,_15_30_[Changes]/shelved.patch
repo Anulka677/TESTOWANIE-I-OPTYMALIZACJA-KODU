@@ -1,0 +1,122 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"07af8199-bcc3-43fe-814e-8e645d5ce362\" name=\"Changes\" comment=\"\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Python Script\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 4\n}</component>\n  <component name=\"ProjectId\" id=\"2tr1C9nhIz3U1tCQpEpWMXVBWMo\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"Python.pixel_operations.executor\": \"Run\",\n    \"Python.zad1.executor\": \"Run\",\n    \"Python.zad10.executor\": \"Run\",\n    \"Python.zad11.executor\": \"Run\",\n    \"Python.zad2.executor\": \"Run\",\n    \"Python.zad3.executor\": \"Run\",\n    \"Python.zad4.executor\": \"Run\",\n    \"Python.zad5.executor\": \"Run\",\n    \"Python.zad6.executor\": \"Run\",\n    \"Python.zad7.executor\": \"Run\",\n    \"Python.zad8.executor\": \"Run\",\n    \"Python.zad9.executor\": \"Run\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"RunOnceActivity.git.unshallow\": \"true\",\n    \"git-widget-placeholder\": \"opencv__basic__transforming\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-PY-243.21565.199\" />\n        <option value=\"bundled-python-sdk-cab1f2013843-4ae2d6a61b08-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.21565.199\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"07af8199-bcc3-43fe-814e-8e645d5ce362\" name=\"Changes\" comment=\"\" />\n      <created>1741095249550</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1741095249550</updated>\n      <workItem from=\"1741095250695\" duration=\"4860000\" />\n      <workItem from=\"1741699445273\" duration=\"12000\" />\n      <workItem from=\"1741699509976\" duration=\"31000\" />\n      <workItem from=\"1741699571017\" duration=\"4352000\" />\n      <workItem from=\"1742303059998\" duration=\"2841000\" />\n      <workItem from=\"1742305970720\" duration=\"1901000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\n    <SUITE FILE_PATH=\"coverage/TESTOWANIE_I_OPTYMALIZACJA_KODU$zad8.coverage\" NAME=\"zad8 Coverage Results\" MODIFIED=\"1741701909202\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\n    <SUITE FILE_PATH=\"coverage/TESTOWANIE_I_OPTYMALIZACJA_KODU$zad5.coverage\" NAME=\"zad5 Coverage Results\" MODIFIED=\"1742307712611\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\n    <SUITE FILE_PATH=\"coverage/TESTOWANIE_I_OPTYMALIZACJA_KODU$zad2.coverage\" NAME=\"zad2 Coverage Results\" MODIFIED=\"1742306640389\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\n    <SUITE FILE_PATH=\"coverage/TESTOWANIE_I_OPTYMALIZACJA_KODU$zad4.coverage\" NAME=\"zad4 Coverage Results\" MODIFIED=\"1742304213767\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\n    <SUITE FILE_PATH=\"coverage/TESTOWANIE_I_OPTYMALIZACJA_KODU$zad10.coverage\" NAME=\"zad10 Coverage Results\" MODIFIED=\"1741702437049\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\n    <SUITE FILE_PATH=\"coverage/TESTOWANIE_I_OPTYMALIZACJA_KODU$zad9.coverage\" NAME=\"zad9 Coverage Results\" MODIFIED=\"1741702169155\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\n    <SUITE FILE_PATH=\"coverage/TESTOWANIE_I_OPTYMALIZACJA_KODU$zad11.coverage\" NAME=\"zad11 Coverage Results\" MODIFIED=\"1741702398915\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\n    <SUITE FILE_PATH=\"coverage/TESTOWANIE_I_OPTYMALIZACJA_KODU$zad1.coverage\" NAME=\"zad1 Coverage Results\" MODIFIED=\"1742306458028\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\n    <SUITE FILE_PATH=\"coverage/TESTOWANIE_I_OPTYMALIZACJA_KODU$zad6.coverage\" NAME=\"zad6 Coverage Results\" MODIFIED=\"1742305500210\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\n    <SUITE FILE_PATH=\"coverage/TESTOWANIE_I_OPTYMALIZACJA_KODU$zad7.coverage\" NAME=\"zad7 Coverage Results\" MODIFIED=\"1741701918290\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\n    <SUITE FILE_PATH=\"coverage/TESTOWANIE_I_OPTYMALIZACJA_KODU$zad3.coverage\" NAME=\"zad3 Coverage Results\" MODIFIED=\"1742307514254\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\n    <SUITE FILE_PATH=\"coverage/TESTOWANIE_I_OPTYMALIZACJA_KODU$pixel_operations.coverage\" NAME=\"pixel_operations Coverage Results\" MODIFIED=\"1741700304700\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\n  </component>\n</project>
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 597d7c23b78a8da1560d276501fc01bd52698a51)
++++ b/.idea/workspace.xml	(date 1742308166799)
+@@ -4,7 +4,9 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="07af8199-bcc3-43fe-814e-8e645d5ce362" name="Changes" comment="" />
++    <list default="true" id="07af8199-bcc3-43fe-814e-8e645d5ce362" name="Changes" comment="Przesunięcia obrazu">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -20,6 +22,18 @@
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;,
++    &quot;assignee&quot;: &quot;Anulka677&quot;
++  }
++}</component>
++  <component name="GithubPullRequestsUISettings">{
++  &quot;selectedUrlAndAccountId&quot;: {
++    &quot;url&quot;: &quot;https://github.com/Anulka677/TESTOWANIE-I-OPTYMALIZACJA-KODU.git&quot;,
++    &quot;accountId&quot;: &quot;872eff50-67a1-4eb5-a5b2-d3614075cf9d&quot;
++  }
++}</component>
+   <component name="ProjectColorInfo">{
+   &quot;associatedIndex&quot;: 4
+ }</component>
+@@ -31,31 +45,31 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Python.pixel_operations.executor": "Run",
+-    "Python.zad1.executor": "Run",
+-    "Python.zad10.executor": "Run",
+-    "Python.zad11.executor": "Run",
+-    "Python.zad2.executor": "Run",
+-    "Python.zad3.executor": "Run",
+-    "Python.zad4.executor": "Run",
+-    "Python.zad5.executor": "Run",
+-    "Python.zad6.executor": "Run",
+-    "Python.zad7.executor": "Run",
+-    "Python.zad8.executor": "Run",
+-    "Python.zad9.executor": "Run",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.git.unshallow": "true",
+-    "git-widget-placeholder": "opencv__basic__transforming",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Python.pixel_operations.executor&quot;: &quot;Run&quot;,
++    &quot;Python.zad1.executor&quot;: &quot;Run&quot;,
++    &quot;Python.zad10.executor&quot;: &quot;Run&quot;,
++    &quot;Python.zad11.executor&quot;: &quot;Run&quot;,
++    &quot;Python.zad2.executor&quot;: &quot;Run&quot;,
++    &quot;Python.zad3.executor&quot;: &quot;Run&quot;,
++    &quot;Python.zad4.executor&quot;: &quot;Run&quot;,
++    &quot;Python.zad5.executor&quot;: &quot;Run&quot;,
++    &quot;Python.zad6.executor&quot;: &quot;Run&quot;,
++    &quot;Python.zad7.executor&quot;: &quot;Run&quot;,
++    &quot;Python.zad8.executor&quot;: &quot;Run&quot;,
++    &quot;Python.zad9.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;opencv__basic__transforming&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+@@ -77,12 +91,26 @@
+       <workItem from="1741699509976" duration="31000" />
+       <workItem from="1741699571017" duration="4352000" />
+       <workItem from="1742303059998" duration="2841000" />
+-      <workItem from="1742305970720" duration="1901000" />
++      <workItem from="1742305970720" duration="2186000" />
++      <workItem from="1742308165099" duration="2000" />
+     </task>
++    <task id="LOCAL-00001" summary="Przesunięcia obrazu">
++      <option name="closed" value="true" />
++      <created>1742308045928</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1742308045928</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="Przesunięcia obrazu" />
++    <option name="LAST_COMMIT_MESSAGE" value="Przesunięcia obrazu" />
+   </component>
+   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+     <SUITE FILE_PATH="coverage/TESTOWANIE_I_OPTYMALIZACJA_KODU$zad8.coverage" NAME="zad8 Coverage Results" MODIFIED="1741701909202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
