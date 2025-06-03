@@ -1,0 +1,166 @@
+##Analiza wynikow (baseline – CPU bez TL)
+
+- czas treningu: ok 18 minut
+- dokładność walidacyjna val_accuracy na koniec treningu: 53,70%
+- dokładność treningowa accuracy: 89,14% - silne przeuczenie
+- overfitting - na wykresach widać dużą różnice między zbiorem treningowym accuracy a walidacyjnym val_accuracy
+- model dobrze nauczył się zbioru treningowego ale nie generalizuje dobrze na zbiorze sprawdzającym
+
+|                      | CPU             |
+|----------------------|-----------------|
+| accuracy (trening)   | 89,14%          |
+| val_accuracy         | 53,70%          | 
+| czas treningu        | 18 min          |
+
+##Porównanie CPU bez TL vs GPU bez TL
+
+- czas treningu GPU: ok 2 minuty
+- GPU skróciło czas treningu 9 krotnie
+- dokładność walidacyjna val_accuracy na koniec treningu: 57,41%
+- dokładność treningowa accuracy: 91,96%
+- overfitting - na wykresach widać dużą różnice między zbiorem treningowym accuracy a walidacyjnym val_accuracy
+- val_accuracy bardzo podobne do CPU ale troche wyższe przy GPU
+
+|                      | CPU             | GPU             |
+|----------------------|-----------------|-----------------|
+| accuracy (trening)   | 89,14%          | 91,96%          |
+| val_accuracy         | 53,70%          | 57,41%          |
+| czas treningu        | 18 min          | 2 min           |
+
+##Porównanie z transfer learningiem i bez
+
+- GPU + TL
+- czas treningu: ok 1 minuta
+- dokładność walidacyjna val_accuracy na koniec treningu: 88,89%
+- dokładność treningowa accuracy: 92,30%
+- 10 epok bo model uczy sie znacznie szybciej - żeby nie doszło do przeuczenia
+- model bardzo dobrze generalizuje - mała różnica między treningiem a walidacją
+- na confusion matrix widzimy dobrą klasyfikację dla wszystkich klas
+- znacznie lepsze wyniki przy krótszym czasie treningu
+
+|                      | GPU             |transfer learning|
+|----------------------|-----------------|-----------------|
+| accuracy (trening)   | 91,96%          | 92,30%          |
+| val_accuracy         | 57,41%          | 88,89%          |
+| czas treningu        | 2 min           | 1 min           |
+| liczba epok          | 15              | 10              |
+
+##Porównanie z normalizacją i bez
+
+- GPU + TL + norm
+- czas treningu: ok 1 minuta
+- dokładność walidacyjna val_accuracy na koniec treningu: 92,59%
+- dokładność treningowa accuracy: 97,36%
+- model osiąga wyzsza val_accuracy niz transfer learning
+- model generalizuje bardzo dobrze – mała różnica między accuracy a val_accuracy
+- na confusion matrix widzimy dobrą klasyfikację dla wszystkich klas
+
+|                      |transfer learning| normalizacja|
+|----------------------|-----------------|-------------|
+| accuracy (trening)   | 92,30%          | 97,36%      |
+| val_accuracy         | 88,89%          | 92,59%      |
+| czas treningu        | 1 min           | 1 min       |
+| liczba epok          | 10              | 10          |
+
+##Porównanie z augmentacją i bez
+
+- GPU + TL + norm + aug
+- czas treningu: ok 1 minuta
+- dokładność walidacyjna val_accuracy na koniec treningu: 88,89%
+- dokładność treningowa accuracy: 97,65%
+- różnica między accuracy a val_accuracy - lekki overfitting
+- zwiekszenie roznorodnosci danych treningowych
+- RandomFlip("horizontal_and_vertical") - losowe odbicie w pionie i poziomie
+- RandomRotation(0.2) - losowy obrót do +-72 stopni
+- RandomZoom(0.1) - losowe przybliżenie/oddalenie do 10%
+- 15 epok bo z 10 wychodziły gorsze wyniki
+- val_accuracy troche gorsze z augumentacja niz bez
+
+|                      | normalizacja    | augumentacja          |
+|----------------------|-----------------|-----------------------|
+| accuracy (trening)   | 97,36%          | 97,65%                |
+| val_accuracy         | 92,59%          | 88,89%                |
+| czas treningu        | 1 min           | 1 min                 |
+| liczba epok          | 10              | 15                    |
+
+##Porównanie z dropoutuem i bez
+
+- GPU + TL + norm + aug + dropout
+- czas treningu: ok 1 minuta
+- dokładność walidacyjna val_accuracy na koniec treningu: 90,74%
+- dokładność treningowa accuracy: 93,01%
+- val_accuracy lepsze z dropoutem niz bez - poprawa wynikow
+- model generalizuje bardzo dobrze – mała różnica między accuracy a val_accuracy
+- na confusion matrix widzimy dobrą klasyfikację dla wszystkich klas
+
+|                      | augumentacja          | dropout |
+|----------------------|-----------------------|---------|
+| accuracy (trening)   | 97,65%                | 93,01%  |
+| val_accuracy         | 88,89%                | 90,74%  |
+| czas treningu        | 1 min                 | 1 min   |
+| liczba epok          | 15                    | 15      |
+
+##Porównanie z dołożeniem danych i bez
+
+- model ten sam - GPU + TL + norm + aug + dropout
+- dane poszerzone przez dołożenie nowej partii danych
+- czas treningu: ok 1 minuta
+- dokładność walidacyjna val_accuracy na koniec treningu: 93,24%
+- dokładność treningowa accuracy: 93,12%
+- model generalizuje jeszcze lepiej – val_accuracy wzrosło a strata walidacyjna spadła (0.1707)
+- na confusion matrix widzimy jeszcze lepsze przypisanie – wzrost poprawności w trudniejszych klasach np Cassian Andor
+- dolozenie danych pozytywnie wpłyneło na działanie modelu
+
+|                            | bez nowych danych | z nowymi danymi |
+| -------------------------- | ----------------- | --------------- |
+| accuracy (trening)         | 93,01%            | 93,12%          |
+| val_accuracy               | 90,74%            | 93,24%          |
+| czas treningu              | 1 min             | 1 min           |
+| liczba epok                | 15                | 15              |
+| liczba zdjęć               | 273               | 373             |
+
+##Porównanie dla każdego rozmiaru wejściowego
+
+- model ten sam - GPU + TL + norm + aug + dropout (z dołożeniem danych)
+- batch size 16 - domyslnie
+- najlepsza val_accuracy dla rozmiaru 128x128 - domyslny rozmiar
+- 96x96 - krotszy czas i dobre wyniki ale accuracy spada
+- 160x160 i 224x224 - lepsza accuracy ale gorsza val_accuracy (lekkie przeuczenie)
+- 128x128 - najbardziej optymalny rozmiar (szybkość i dokładność)
+
+|                            | 128x128 | 96x96 | 160x160| 224x224 |
+| -------------------------- | --------|-------|--------|---------|
+| accuracy (trening)         | 93,12%  | 87,56%| 94,53% | 95,19%  |
+| val_accuracy               | 93,24%  | 90,54%| 86,49% | 89,19%  |
+| czas treningu              | 1 min   | <1 min| 1 min  | 1 min   |
+| liczba epok                | 15      | 15    | 15     | 15      |
+
+##Porównanie batch size
+
+- model ten sam - GPU + TL + norm + aug + dropout (z dołożeniem danych)
+- 128x128 - domyslny rozmiar
+- najwyzsza val_accuracy przy batch size 128 (mimo najnizszej accuracy co moze oznaczac lepsze ugolnienie modelu i mniejsze przeuczenie)
+- przeuczenie przy batch size 64 - wysoka accuracy ale niższa val_accuracy
+- batch size 16 i 32 - dobre wyniki ale najlepsze przy batch size 128
+
+|                            | 16      | 32    | 64     | 128     |
+| -------------------------- | --------|-------|--------|---------|
+| accuracy (trening)         | 93,12%  | 93,15%| 94,79% | 90,15%  |
+| val_accuracy               | 93,24%  | 90,54%| 86,49% | 94,59%  |
+| czas treningu              | 1 min   | 1 min | 1 min  | 1 min   |
+| liczba epok                | 15      | 15    | 15     | 15      |
+
+##Porównanie każdej sieci
+
+- rozmiar wejściowy 128x128, batch size 128 dla każdego modelu
+- ResNet50 daje najlepsze wyniki - wysoka val_accuracy
+- VGG16 i InceptionV3 najgorsza accuracy i val_accuracy w porównaniu z innymi
+- różnica między accuracy a val_accuracy dla MobileNetV2 - lekkie przeuczenie
+- ResNet101 daje dobre wyniki ale nielepsze niż ResNet50
+
+|                     | ResNet50| VGG16 |ResNet101|InceptionV3|MobileNetV2|
+| --------------------|---------|-------|---------|-----------|-----------|
+| accuracy (trening)  | 90,15%  | 73,31%| 85,12%  | 65,56%    |91,06%     |
+| val_accuracy        | 94,59%  | 81,08%| 89,19%  | 71,62%    |85,14%     |
+| czas treningu       | 1 min   | 1 min | 1 min   | 1 min     |1 min      |
+| liczba epok         | 15      | 15    | 15      | 15        |15         |
